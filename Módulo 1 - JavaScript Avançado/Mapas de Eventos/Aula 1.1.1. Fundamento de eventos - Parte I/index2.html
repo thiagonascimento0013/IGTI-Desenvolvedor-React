@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fundamentos de Eventos</title>
+</head>
+<body>
+	<!-- Manipulação de eventos através do DOM-->
+	<!--Reutilização de ações-->
+	<button type="button">Clique aqui</button>
+	<a href="#">Clique aqui!</a>
+
+</body>
+</html>
+
+<script>
+	// Recuperando o botão e o link atravé de uma variável
+	var btn = document.querySelector('button');
+	var link = document.querySelector('a');
+
+	// Adicionando o manipulador ao elemento recuperado através das variáveis acima
+	btn.onclick = () => {
+		alert('Você clicou no botão');
+	}
+	link.onclick = () => {
+		window.alert('Você clicou no link');
+	}
+</script>

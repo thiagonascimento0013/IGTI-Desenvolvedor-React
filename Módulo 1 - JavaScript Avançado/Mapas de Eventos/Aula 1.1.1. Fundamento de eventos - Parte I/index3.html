@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fundamentos de Eventos</title>
+</head>
+<body>
+	<!-- Manipulação de eventos através do DOM 2-->
+	<!--Reutilização de ações através do addEventListener-->
+	<button type="button">Clique aqui</button>
+	<a href="#">Clique aqui!</a>
+</body>
+</html>
+
+<script>
+	// Recuperando o botão e o link atravé de uma variável
+	var botao = document.querySelector('button');
+	var link = document.querySelector('a');
+
+	// Adicionando o manipulador ao elemento recuperado através do addEventListener
+	botao.addEventListener('click', alertaBotao);
+	link.addEventListener('click', alertaLink)
+
+	// Criação de função que irá executar o estado do botão quando clicado
+	function alertaBotao () {
+		window.alert('Você clicou no botão');
+	}
+
+	function alertaLink () {
+		window.alert('Você clicou no link');
+	}
+</script>
