@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aula 1.4 KeyboardEvent - Combinação de teclas</title>
+</head>
+<body>
+	<p>Pressione D e A juntos</p>
+</body>
+<script>
+	// Declarando função que detecta os movimentos do teclado
+	function runDoubleKeys (func, ...codes) {
+
+		// Armazena as teclas pressionadas
+		let teclasPressionadas = new Set();
+
+		document.addEventListener('keydown', (event) => {
+			// Recebendo o código ask do evento
+			teclasPressionadas.add(event.code);
+
+			console.log(event.code);
+			for (let code of codes)
+				if(!teclasPressionadas.has(code)) {
+					return;
+				}
+			teclasPressionadas.clear();
+			func();
+		});
+
+		// Arow function com apenas um comanda: Pode ser utilizado sem o uso de chaves
+		document.addEventListener('keyup', (event) => {
+			teclasPressionadas.delete(event.code);
+		});
+
+	}
+
+	// Chamando a função
+	runDoubleKeys(() => alert("Combinação de duas teclas"),
+		"KeyA",
+		"KeyD"
+	);
+
+</script>
+</html>

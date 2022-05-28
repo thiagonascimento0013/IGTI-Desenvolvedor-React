@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aula 1.3 MouseEvent - Ordem de execução</title>
+</head>
+<body>
+	<input id='inp' value='Clique aqui' type='button'>
+	<textarea id='txtarea'></textarea>
+	<input type='button' onclick="txtarea.value=''" value='Limpar'>
+</body>
+<script>
+
+	// Criação de variáveis
+	let inp = document.getElementById('inp');
+
+	// Adicionando o addEventListener
+	inp.addEventListener('mousedown', log);
+	inp.addEventListener('mouseup', log);
+	inp.addEventListener('click', log);
+	inp.addEventListener('contextmenu', log);
+	inp.addEventListener('dbclick', log);
+
+	// Implementando as funções
+	function log (event) {
+		document.getElementById('txtarea').value += event.type + ' [target: + event.wich + ]\n';
+		document.getElementById('txtarea').scrollTop = document.getElementsById('txtarea');
+	}
+
+</script>
+</html>
