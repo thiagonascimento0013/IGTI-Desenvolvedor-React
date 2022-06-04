@@ -70,7 +70,7 @@ Carro.prototype.getMarca = function a() {};
 
 
 //ES6
-class Carro {
+class Carro1 {
 	constructor(marca) {
 		this.marca = marca;
 	}
@@ -92,7 +92,7 @@ class Veiculo {
 	}
 }
 
-class Carro extends Veiculo {
+class Carro2 extends Veiculo {
 	constructor(marca, modelo, estepe) {
 		super(marca, modelo);
 		this.estepe = estepe;
