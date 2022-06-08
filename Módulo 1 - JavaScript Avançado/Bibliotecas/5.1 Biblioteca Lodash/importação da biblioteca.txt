@@ -1,0 +1,4 @@
+npm install lodash
+
+npm -i
+npm i
