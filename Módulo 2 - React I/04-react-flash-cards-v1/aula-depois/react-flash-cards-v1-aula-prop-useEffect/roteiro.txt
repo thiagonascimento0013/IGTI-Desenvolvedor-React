@@ -16,16 +16,16 @@ react-flash-cards-v1 - roteiro
 
 (x) Renderizar a partir do array de flashcards com .map 
 
-(x) Criar estado no app para flashCards (Array) 
+() Criar estado no app para flashCards (Array) 
    e showDescription (Boolean)
 
-(x) Criar botão para embaralhar os cards com base em:
+() Criar botão para embaralhar os cards com base em:
    https://stackoverflow.com/a/12646864
 
-(x) Fazer com que todos os cards exibam o título 
+() Fazer com que todos os cards exibam o título 
    ou descrição com radio buttons
 
-(x) Sincronizar o estado de FlashCardsPage e FlashCard com useEffect
+() Sincronizar o estado de FlashCardsPage e FlashCard com useEffect
 
 () Comentar e mostrar uma outra alternativa mais elegante para
    persistir o estado do app (lifting state up)

@@ -1,17 +1,17 @@
-import { useState } from "react";
-
 export default function FlashCard({
+	id,
 	title = 'Título do card',
   description = 'Descrição do card, que pode conter mais palavras que o título.',
+	showFlashCardTitle = true,
+	onToggleFlashCard = null,
 }) {
-	const [showTitle, setShowTitle] = useState(false);
-
-	const fontSizeClassName = showTitle ? 'text-xl' : 'text-sm';
-
 	function handleCardClick() {
-		//setShowTitle(!showTitle);
-		setShowTitle(currentShowTitle => !currentShowTitle);
+		if(onToggleFlashCard) {
+			onToggleFlashCard(id);
+		}
 	}
+
+	const fontSizeClassName = showFlashCardTitle ? 'text-xl' : 'text-sm';
 
   return(
 	 <main 
@@ -21,7 +21,7 @@ export default function FlashCard({
 			style={{fontFamily: "monospace"}}
 			onClick={handleCardClick}
 		>
-		{showTitle ? title : description}
+		{showFlashCardTitle ? title : description}
 	 </main>
 	 );
 }
