@@ -1,0 +1,9 @@
+yarn init -y
+
+yarn add --dev -E json-server
+
+yarn add uuid -E
+
+node .\generator.js
+
+yarn server

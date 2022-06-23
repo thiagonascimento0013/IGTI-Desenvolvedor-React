@@ -1,0 +1,29 @@
+{
+  "flashcards": [
+    {
+      "id": "436a7f19-16b6-41eb-91b6-390dac879600",
+      "title": "React",
+      "description": "Biblioteca criada pelo Facebook para renderização otimizada. Pode ser utilizada em diversas plataformas como web, mobile e Realidade Virtual."
+    },
+    {
+      "title": "useEffect2",
+      "description": "Hook nativo do React para lidar com efeitos colaterais.2",
+      "id": "88ab1c51-eaf8-4c0c-aa3a-fa2cf08e6f56"
+    },
+    {
+      "id": "ada3bd66-a2b9-412f-a614-d76983e8b897",
+      "title": "useState",
+      "description": "Hook nativo do React que permite o gerenciamento de estado da aplicação e de componentes."
+    },
+    {
+      "id": "8b08913e-dcb9-4a9d-ac7d-31e89730ad1d",
+      "title": "Virtual DOM",
+      "description": "Estrutura utilizada pelo React para manipulação do DOM em memória. Permite a atualização do DOM real somente onde necessário, o que pode garantir uma melhor performance da aplicação."
+    },
+    {
+      "id": "55e4fea8-32d7-4b95-b02d-e142d3d815e9",
+      "title": "a",
+      "description": "a2"
+    }
+  ]
+}
