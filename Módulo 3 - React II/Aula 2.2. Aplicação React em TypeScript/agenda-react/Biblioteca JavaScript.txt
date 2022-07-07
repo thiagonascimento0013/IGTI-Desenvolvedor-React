@@ -1,0 +1,7 @@
+npm install react-router-dom@6 --save
+
+npm install @types/react-router-dom --save
+
+--save: Para salvar no package.json
+
+OBS: FALTOU VER AS AULAS DESSE MODULO

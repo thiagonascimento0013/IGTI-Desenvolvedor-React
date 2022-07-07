@@ -1,0 +1,6 @@
+npm i -g netlify-cli@3.29.14
+
+netlifly logout
+netligly login
+
+yarn prod:cloud
